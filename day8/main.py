@@ -1,7 +1,7 @@
 import numpy as np
 
 if __name__ == "__main__":
-    file = open('input.txt', 'r')
+    file = open('input8.txt', 'r')
     lines = file.readlines()
     count = 0
     matrix = np.array([[int(x) for x in line.strip()] for line in lines])

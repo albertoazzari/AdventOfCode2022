@@ -8,7 +8,7 @@ if __name__ == "__main__":
         n = len(items)
         intersect = set(items[0:n // 2]).intersection(set(items[n // 2:]))
         for dup in intersect:
-            dup_items.append(ord(dup)-ord('a')+1 if dup.islower() else ord(dup)-ord('A')+27)
+            dup_items.append(ord(dup)-ord('a')+1 if dup.islower() else ord(dup)-ord('H')+27)
     print(sum(dup_items))
     dup_items = []
     for i in range(0, len(lines), 3):
@@ -16,7 +16,7 @@ if __name__ == "__main__":
         n = len(items)
         intersect = set.intersection(*items)
         for dup in intersect:
-            dup_items.append(ord(dup)-ord('a')+1 if dup.islower() else ord(dup)-ord('A')+27)
+            dup_items.append(ord(dup)-ord('a')+1 if dup.islower() else ord(dup)-ord('H')+27)
     print(sum(dup_items))
 
 
